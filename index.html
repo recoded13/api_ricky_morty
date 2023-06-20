@@ -1,12 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>My First API</title>
 </head>
 <body>
-    
+<header id="header" class="page-header">
+    <div class="title">
+      <h1>My First API</h1>
+    </div>
+  </header>
+
+  <nav class="menu" id="main-menu">
+    <button class="menu-toggle" id="toggle-menu">
+      toggle menu
+    </button>
+    <div class="menu-dropdown">
+      <ul class="nav-menu">
+        <li><a href="/">Docs</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Support</a></li>
+        <li><a href="/">Connect Us</a></li>
+      </ul>
+    </div>
+  </nav>
+<main id="main">
+    <div class="row">
+      <section class="column">
+        <h2 class="subtitle">Single-origin</h2>
+        <img style="width:100%"  src="img/rick301.JPG">
+        <p><li><button>Title</button></li>
+          <li><button>Imagen</button></li>
+          <li><button>Status</button></li>
+          <li><button>Especie</button></li>
+       
+        </p>
+      </section>
+      <section class="column">
+        <h2 class="subtitle">Jessica</h2>
+        <img style="width:100%"  src="img/rick302.JPG">
+        <p><li><button>Title</button></li>
+          <li><button>Imagen</button></li>
+          <li><button>Status</button></li>
+          <li><button>Especie</button></li>
+
+        </p>
+      </section>
+      <section class="column">
+        <h2 class="subtitle">Vance Maximus</h2>
+        <img style="width:100%"  src="img/rick303.JPG">
+        <p><li><button>Title</button></li>
+          <li><button>Imagen</button></li>
+          <li><button>Status</button></li>
+          <li><button>Especie</button></li>
+        
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <script type="text/javascript">
+  (function() {
+  var menuButton = document.getElementById('toggle-menu');
+  menuButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    var menu = document.getElementById('main-menu');
+    menu.classList.toggle('is-open');
+  });
+})();
+</script>
+
 </body>
- 
+</html>
