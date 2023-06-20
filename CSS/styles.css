@@ -20,9 +20,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/*
- * Links
- */
+/*Links*/
 a:link {
   color: #1476b8;
   font-weight: bold;
@@ -38,9 +36,7 @@ a:active {
   color: #b81414;
 }
 
-/*
- * Header section
- */
+/* Header section*/
 .page-header {
   padding: 0.4em 1em;
   background-color: #fff;
@@ -70,6 +66,7 @@ a:active {
     font-size: 2.25rem;
   }
 }
+
 /* Main section*/
 main {
   padding: 1em;
@@ -96,9 +93,7 @@ main {
   text-transform: uppercase;
 }
 
-/*
- * Menu
- */
+/*Menu */
 .menu {
   position: relative;
 }
@@ -153,9 +148,7 @@ main {
   display: block;
 }
 
-/**
- * Nav menu
- */
+/*Nav menu*/
 .nav-menu {
   margin: 0;
   padding-left: 0;
@@ -203,15 +196,13 @@ main {
   }
 }
 
-/**
- * Main columns
- */
+/*Main column*/
 @media (min-width: 35em) {
- .row {
-   display: flex;
-   margin-left: -.75em;
-   margin-right: -.75em;
-  }
+.row {
+    display: flex;
+    margin-left: -.75em;
+    margin-right: -.75em;
+}
 
   .column {
     flex: 1;
@@ -231,10 +222,27 @@ main {
   padding:5px;
   width: 150px;
   margin-left:10px;
-
 }
 .column>li>button:hover{
   background-color: #84bff7;
   box-shadow: #84bff7;
-
 }
+
+/* Footer */
+.footer {
+	padding: 0;
+	background-color: #000;
+  display: flex;
+  justify-content:center;
+  padding:3px;
+}
+.footer li{list-style-type: none;}
+.footer img {
+	width: 21px;
+	margin-right: 14px;
+}
+@media (min-width: 35em) {
+.footer {
+	padding: 5px ;
+}}
+	
