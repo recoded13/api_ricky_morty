@@ -7,16 +7,14 @@
   <title>My First API</title>
 </head>
 <body>
-<header id="header" class="page-header">
+  <header id="header" class="page-header">
     <div class="title">
       <h1>My First API</h1>
     </div>
   </header>
 
   <nav class="menu" id="main-menu">
-    <button class="menu-toggle" id="toggle-menu">
-      toggle menu
-    </button>
+    <button class="menu-toggle" id="toggle-menu">toggle menu</button>
     <div class="menu-dropdown">
       <ul class="nav-menu">
         <li><a href="">Docs</a></li>
@@ -26,51 +24,57 @@
       </ul>
     </div>
   </nav>
-<main id="main">
+  <main id="main">
     <div class="row">
       <section class="column">
         <h2 class="subtitle">Single-origin</h2>
-        <img style="width:100%"  src="img/rick301.JPG">
-        <p><li><button>Title</button></li>
+        <img style="width:100%" src="img/rick301.JPG">
+        <p>
+          <li><button>Title</button></li>
           <li><button>Imagen</button></li>
           <li><button>Status</button></li>
           <li><button>Especie</button></li>
-       
         </p>
       </section>
       <section class="column">
         <h2 class="subtitle">Jessica</h2>
-        <img style="width:100%"  src="img/rick302.JPG">
-        <p><li><button>Title</button></li>
+        <img style="width:100%" src="img/rick302.JPG">
+        <p>
+          <li><button>Title</button></li>
           <li><button>Imagen</button></li>
           <li><button>Status</button></li>
           <li><button>Especie</button></li>
-
         </p>
       </section>
       <section class="column">
         <h2 class="subtitle">Vance Maximus</h2>
-        <img style="width:100%"  src="img/rick303.JPG">
-        <p><li><button>Title</button></li>
+        <img style="width:100%" src="img/rick303.JPG">
+        <p>
+          <li><button>Title</button></li>
           <li><button>Imagen</button></li>
           <li><button>Status</button></li>
           <li><button>Especie</button></li>
-        
         </p>
       </section>
     </div>
   </main>
+  <footer>
+    <ul class="footer">
+      <li><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
+      <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+      <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
+    </ul>
+  </footer>
 
-  <script type="text/javascript">
-  (function() {
-  var menuButton = document.getElementById('toggle-menu');
-  menuButton.addEventListener('click', function(event) {
-    event.preventDefault();
-    var menu = document.getElementById('main-menu');
-    menu.classList.toggle('is-open');
-  });
-})();
+<script type="text/javascript">
+    (function () {
+      var menuButton = document.getElementById('toggle-menu');
+      menuButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        var menu = document.getElementById('main-menu');
+        menu.classList.toggle('is-open');
+      });
+    })();
 </script>
-
 </body>
 </html>
