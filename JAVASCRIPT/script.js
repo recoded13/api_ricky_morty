@@ -1,5 +1,5 @@
 const apiUrl = 'https://rickandmortyapi.com/api/character';
-const charactersPerPage = 15; // Cantidad de personajes por página
+const charactersPerPage = 20; // Cantidad de personajes por página
 let allCharacters = []; // Variable para almacenar todos los personajes
 
 function fetchCharacters(page) {
