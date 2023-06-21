@@ -24,49 +24,17 @@
       </ul>
     </div>
   </nav>
-  <main id="main">
-    <div class="row">
-      <section class="column">
-        <h2 class="subtitle">Single-origin</h2>
-        <img style="width:100%" src="img/rick301.JPG">
-        <p>
-          <li><button>Title</button></li>
-          <li><button>Imagen</button></li>
-          <li><button>Status</button></li>
-          <li><button>Especie</button></li>
-        </p>
-      </section>
-      <section class="column">
-        <h2 class="subtitle">Jessica</h2>
-        <img style="width:100%" src="img/rick302.JPG">
-        <p>
-          <li><button>Title</button></li>
-          <li><button>Imagen</button></li>
-          <li><button>Status</button></li>
-          <li><button>Especie</button></li>
-        </p>
-      </section>
-      <section class="column">
-        <h2 class="subtitle">Vance Maximus</h2>
-        <img style="width:100%" src="img/rick303.JPG">
-        <p>
-          <li><button>Title</button></li>
-          <li><button>Imagen</button></li>
-          <li><button>Status</button></li>
-          <li><button>Especie</button></li>
-        </p>
-      </section>
-    </div>
-  </main>
-<script type="text/javascript">
-    (function () {
-      var menuButton = document.getElementById('toggle-menu');
-      menuButton.addEventListener('click', function (event) {
-        event.preventDefault();
-        var menu = document.getElementById('main-menu');
-        menu.classList.toggle('is-open');
-      });
-    })();
-</script>
+  <section class="resume">
+    <h3>¿Que es un API?</h3>
+    <P>Una API es una interfaz de programación de aplicaciones (del inglés API: Application Programming Interface). Es un conjunto de rutinas que provee acceso a funciones de un determinado software.
+        Son publicadas por los constructores de software para permitir acceso a características de bajo nivel o propietarias,
+        detallando solamente la forma en que cada rutina debe ser llevada a cabo y la funcionalidad que brinda, sin otorgar información acerca de cómo se lleva a cabo la tarea. Son utilizadas por los programadores para construir sus aplicaciones sin necesidad de volver a programar funciones ya hechas por otros,
+        reutilizando código que se sabe que está probado y que funciona correctamente.
+        En la web, las API's son publicadas por sitios para brindar la posibilidad de realizar alguna acción o acceder a alguna característica o contenido que el sitio provee.</P>
+  </section>
+
+  <div id="character-container"></div>
+
+  <script src="./JAVASCRIPT/script.js"></script>
 </body>
 </html>

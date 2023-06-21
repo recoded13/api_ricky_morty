@@ -67,32 +67,7 @@
     }
   }
   
-  /* Main section*/
-  main {
-    padding: 1em;
-  }
-  
-  @media (min-width: 35em) {
-    main {
-      padding: 2em 1em;
-    }
-  }
-  
-  @media (min-width: 50em) {
-    main {
-      padding: 2em 4em;
-  
-    }
-  }
-  
-  .subtitle {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    /*font-size: 0.875rem;*/
-    font-size: 0.95rem;
-    text-transform: uppercase;
-  }
-  
+ 
   /*Menu */
   .menu {
     position: relative;
@@ -227,4 +202,26 @@
     background-color: #84bff7;
     box-shadow: #84bff7;
   }
+
+  #character-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
   
+  .character-card {
+    /* Estilos de las cartas */
+    width: 310px;
+    padding: 1px;
+    background-color: #9b9494;
+    border: 1px solid rgb(62, 59, 59);
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .resume{
+    padding: 1px;
+    text-align: justify;
+    margin: 3px;
+  }
