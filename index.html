@@ -1,40 +1,62 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>My First API</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>My First API</title>
 </head>
+
 <body>
-  <header id="header" class="page-header">
-    <div class="title">
-      <h1>My First API</h1>
+    <header id="header" class="page-header">
+        <div class="title">
+            <h1>My First API</h1>
+        </div>
+    </header>
+
+    <nav class="menu" id="main-menu">
+        <button class="menu-toggle" id="toggle-menu">toggle menu</button>
+        <div class="menu-dropdown">
+            <ul class="nav-menu">
+                <li><a href="">Docs</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Connect Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="resume">
+        <h3>¿Que es un API?</h3>
+        <P>Una API es una interfaz de programación de aplicaciones (del inglés API: Application Programming Interface).
+            Es un conjunto de rutinas que provee acceso a funciones de un determinado software.
+            Son publicadas por los constructores de software para permitir acceso a características de bajo nivel o
+            propietarias,
+            detallando solamente la forma en que cada rutina debe ser llevada a cabo y la funcionalidad que brinda, sin
+            otorgar información acerca de cómo se lleva a cabo la tarea. Son utilizadas por los programadores para
+            construir sus aplicaciones sin necesidad de volver a programar funciones ya hechas por otros,
+            reutilizando código que se sabe que está probado y que funciona correctamente.
+            En la web, las API's son publicadas por sitios para brindar la posibilidad de realizar alguna acción o
+            acceder a alguna característica o contenido que el sitio provee.</P>
+    </section><br>
+    <div id="filter-container">
+        <input type="text" id="species-input" placeholder="Ingrese una especie">
+        <button id="search-button">Buscar</button>
+    </div><br>
+
+    <div id="character-container"></div>
+    <div id="popup-container">
+        <div id="popup-content">
+            <!-- Contenido del pop-up -->
+            <h2 id="popup-name"></h2>
+            <p id="popup-species"></p>
+            <p id="popup-status"></p>
+            <button id="popup-close">Cerrar</button> <!-- Agregar el botón de cierre aquí -->
+        </div>
     </div>
-  </header>
 
-  <nav class="menu" id="main-menu">
-    <button class="menu-toggle" id="toggle-menu">toggle menu</button>
-    <div class="menu-dropdown">
-      <ul class="nav-menu">
-        <li><a href="">Docs</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Support</a></li>
-        <li><a href="">Connect Us</a></li>
-      </ul>
-    </div>
-  </nav>
-  <section class="resume">
-    <h3>¿Que es un API?</h3>
-    <P>Una API es una interfaz de programación de aplicaciones (del inglés API: Application Programming Interface). Es un conjunto de rutinas que provee acceso a funciones de un determinado software.
-        Son publicadas por los constructores de software para permitir acceso a características de bajo nivel o propietarias,
-        detallando solamente la forma en que cada rutina debe ser llevada a cabo y la funcionalidad que brinda, sin otorgar información acerca de cómo se lleva a cabo la tarea. Son utilizadas por los programadores para construir sus aplicaciones sin necesidad de volver a programar funciones ya hechas por otros,
-        reutilizando código que se sabe que está probado y que funciona correctamente.
-        En la web, las API's son publicadas por sitios para brindar la posibilidad de realizar alguna acción o acceder a alguna característica o contenido que el sitio provee.</P>
-  </section>
 
-  <div id="character-container"></div>
-
-  <script src="./JAVASCRIPT/script.js"></script>
+    <script src="./JAVASCRIPT/script.js"></script>
 </body>
+
 </html>
