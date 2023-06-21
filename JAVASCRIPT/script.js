@@ -96,3 +96,43 @@ fetchCharacters(1);
     menu.classList.toggle('is-open');
   });
 })();
+
+// Función para realizar la búsqueda
+function performSearch() {
+    const speciesInput = document.getElementById('species-input');
+    const species = speciesInput.value.trim();
+  
+    // Filtrar los personajes según la especie ingresada
+    const filteredCharacters = allCharacters.filter(character => {
+      return character.species.toLowerCase().includes(species.toLowerCase());
+    });
+  
+    // Generar las tarjetas de los personajes filtrados
+    generateFilteredCharacterCards(filteredCharacters);
+  }
+  
+  // Agregar event listener al botón de búsqueda
+  const searchButton = document.getElementById('search-button');
+  searchButton.addEventListener('click', performSearch);
+  
+  // Agregar event listener al presionar la tecla "Enter" en el campo de entrada
+  const speciesInput = document.getElementById('species-input');
+  speciesInput.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+      performSearch();
+    }
+  });
+  
+  // Función para generar las tarjetas de los personajes filtrados
+  function generateFilteredCharacterCards(characters) {
+    const container = document.getElementById('character-container');
+    container.innerHTML = ''; // Limpiar el contenedor
+  
+    characters.forEach(character => {
+      const card = createCharacterCard(character);
+      container.appendChild(card);
+    });
+  }
+  
+  // Limpiar el campo de especie
+  speciesInput.value = '';

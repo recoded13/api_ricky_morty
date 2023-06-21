@@ -208,6 +208,8 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     justify-items: center;
+    position: relative;
+    overflow: hidden;
   }
   
   .character-card {
@@ -218,7 +220,33 @@
     border: 1px solid rgb(62, 59, 59);
     border-radius: 5px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: box-shadow 0.3s;
+
   }
+
+  .character-card:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.7);
+  }
+  
+  .character-card::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-image: radial-gradient(rgba(0, 255, 0, 0.4) 30%, transparent 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .character-card:hover::before {
+    opacity: 1;
+  }
+  
   
   .resume{
     padding: 1px;
