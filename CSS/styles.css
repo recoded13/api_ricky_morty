@@ -228,21 +228,3 @@ main {
   box-shadow: #84bff7;
 }
 
-/* Footer */
-.footer {
-	padding: 0;
-	background-color: #000;
-  display: flex;
-  justify-content:center;
-  padding:3px;
-}
-.footer li{list-style-type: none;}
-.footer img {
-	width: 21px;
-	margin-right: 14px;
-}
-@media (min-width: 35em) {
-.footer {
-	padding: 5px ;
-}}
-	
