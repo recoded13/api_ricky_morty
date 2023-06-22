@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MY FIRST API</title>
+  <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div class="header-title"><h1>My First API</h1> </div>
+<header id="header" class="page-header">
+    <div class="title">
+      <div class="slogan search bar3" id="filter-container">
+          <form>
+              <input type="text" id="species-input" placeholder="Ingrese una especie">
+              <button id="search-button"></button>
+          </form>
+      </div>
+    </div>
+</header>
+
+<nav class="menu" id="main-menu">
+    <button class="menu-toggle" id="toggle-menu">toggle menu</button>
+    <div class="menu-dropdown">
+      <ul class="nav-menu">
+        <li><a href="https://rickandmortyapi.com/documentation" target ="_blank">Docs</a></li>
+        <li><a href="https://www.rickandmortymerch.com/" target ="_blank">Official website shop</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Anexo:Episodios_de_Rick_y_Morty" target ="_blank">Episode list</a></li>
+        <li><a href="https://github.com/recoded13/api_ricky_morty/tree/main" target ="_blank">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+<aside id="hero" class="hero">
+    <h3>¿Que es un API?</h3>
+    <P>Una API es una interfaz de programación de aplicaciones (del inglés API: Application Programming Interface).
+        Es un conjunto de rutinas que provee acceso a funciones de un determinado software.Son publicadas por los 
+        constructores de software para permitir acceso a características de bajo nivel o
+        propietarias, detallando solamente la forma en que cada rutina debe ser llevada a cabo y la funcionalidad que 
+        brinda, sin otorgar información acerca de cómo se lleva a cabo la tarea. Son utilizadas por los programadores para
+        construir sus aplicaciones sin necesidad de volver a programar funciones ya hechas por otros,
+        reutilizando código que se sabe que está probado y que funciona correctamente. En la web, las API's son publicadas por 
+        sitios para brindar la posibilidad de realizar alguna acción o acceder a alguna característica o contenido que el sitio provee.
+    </P>
+</aside>
+
+<main id="main">
+  <div class="row">
+    <section class="column">
+      <div id="character-container"></div>
+      <div id="popup-container">
+      <div id="popup-content">
+          <!-- Contenido del pop-up -->
+          <h2 id="popup-name"></h2>
+          <p id="popup-species"></p>
+          <p id="popup-status"></p>
+          <button id="popup-close">Cerrar</button> <!-- Agregar el botón de cierre aquí -->
+      </div>
+      </div>
+    </section>
+  </div>
+</main>
+</body>
+<script src="./JAVASCRIPT/script.js"></script>
+</html>
