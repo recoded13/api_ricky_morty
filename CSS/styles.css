@@ -37,6 +37,16 @@
   }
   
   /* Header section*/
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .title {
+    text-align: center;
+  }
+
   .page-header {
     padding: 0.4em 1em;
     background-color: #fff;
@@ -54,18 +64,19 @@
     }
   }
   
-  .title > h1 {
-    color: #333;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    margin: .2em 0;
+  
+  /*image*/
+  img {
+    max-width: 100%;
+    height: auto;
   }
   
-  @media (min-width: 35em) {
-    .title > h1 {
-      font-size: 2.25rem;
+  @media (min-width: 1068px) {
+    img {
+      max-width: 50%;
     }
   }
+
   
  
   /*Menu */
@@ -252,6 +263,8 @@
     padding: 1px;
     text-align: justify;
     margin: 3px;
+    background-color: #9b9494;
+    margin-top: 8px;
   }
 
   #popup-container {
