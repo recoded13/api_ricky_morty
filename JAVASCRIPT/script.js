@@ -1,6 +1,8 @@
+//API
+
 const apiUrl = 'https://rickandmortyapi.com/api/character';
 const charactersPerPage = 20; // Cantidad de personajes por página
-let allCharacters = []; // Variable para almacenar todos los personajes
+let allCharacters = []; 
 
 function fetchCharacters(page) {
   const url = `${apiUrl}?page=${page}`;
@@ -11,7 +13,6 @@ function fetchCharacters(page) {
       const characters = data.results;
       allCharacters = allCharacters.concat(characters);
 
-      // Verificar si se ha alcanzado la cantidad deseada de personajes
       if (allCharacters.length >= charactersPerPage) {
         allCharacters = allCharacters.slice(0, charactersPerPage); // Limitar a la cantidad deseada
         generateCharacterCards();
@@ -56,7 +57,7 @@ function createCharacterCard(character) {
   card.appendChild(species);
   card.appendChild(status);
 
-  // Agregar event listener al hacer clic en la imagen para mostrar el pop-up
+  //  pop-up
   image.addEventListener('click', function() {
     showPopup(character);
   });
@@ -102,20 +103,20 @@ function performSearch() {
     const speciesInput = document.getElementById('species-input');
     const species = speciesInput.value.trim();
   
-    // Filtrar los personajes según la especie ingresada
+  
     const filteredCharacters = allCharacters.filter(character => {
       return character.species.toLowerCase().includes(species.toLowerCase());
     });
   
-    // Generar las tarjetas de los personajes filtrados
+
     generateFilteredCharacterCards(filteredCharacters);
   }
   
-  // Agregar event listener al botón de búsqueda
+
   const searchButton = document.getElementById('search-button');
   searchButton.addEventListener('click', performSearch);
   
-  // Agregar event listener al presionar la tecla "Enter" en el campo de entrada
+  // Agregar event listener  tecla "intro" 
   const speciesInput = document.getElementById('species-input');
   speciesInput.addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
@@ -126,7 +127,7 @@ function performSearch() {
   // Función para generar las tarjetas de los personajes filtrados
   function generateFilteredCharacterCards(characters) {
     const container = document.getElementById('character-container');
-    container.innerHTML = ''; // Limpiar el contenedor
+    container.innerHTML = ''; 
   
     characters.forEach(character => {
       const card = createCharacterCard(character);
@@ -134,5 +135,4 @@ function performSearch() {
     });
   }
   
-  // Limpiar el campo de especie
   speciesInput.value = '';
