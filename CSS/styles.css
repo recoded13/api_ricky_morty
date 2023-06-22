@@ -305,3 +305,14 @@
     border-radius: 5px;
     cursor: pointer;
   }
+
+/* section y search*/
+
+section.resume {
+  padding: 20px 20px;
+  margin: 0px;
+}
+
+#filter-container {
+  margin: 0 20px; 
+}
